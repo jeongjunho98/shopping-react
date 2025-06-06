@@ -29,7 +29,6 @@ function SelectedOption(props) {
               onClick={() => {
                 props.isTotalValue[props.index].num === 1 ? <></> : minusNum();
               }}
-              type="button"
             >
               -<i></i>
             </UiMiniBtn>
@@ -39,7 +38,7 @@ function SelectedOption(props) {
               max="999"
               value={props.isTotalValue[props.index].num}
               onChange={(e) => props.isTotalValue[props.index].num}
-            />
+            />ㅖㅖ
             <UiMiniBtn
               onClick={() => {
                 props.isTotalValue[props.index].num =
