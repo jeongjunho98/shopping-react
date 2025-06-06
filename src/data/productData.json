@@ -1,0 +1,40 @@
+{
+    "product_count": 100,
+    "results": [
+        {
+          "idx": 1,
+          "name" : "신라면 작은컵 50개",
+          "brandIdx": 1,
+          "categoryIdx":1,
+          "price":3000,
+          "salePrice":1000,
+          "deliveryType" : "신라면 택배",
+          "isTodayDeal" : "x",
+          "imageurl" : "https://asset.m-gs.kr/prod/18677306/1/550"
+        },{
+          "idx": 2,
+          "name" : "능이주 150ml",
+          "brandIdx": 1,
+          "categoryIdx":1,
+          "price":4000,
+          "salePrice":2000,
+          "deliveryType" : "주류 택배",
+          "isTodayDeal" : "x",
+          "imageurl" : "https://image.idus.com/image/files/14646a0bffc74a8cab94be5ee6be67c0_512.jpg"
+        },{  
+          "idx": 3,
+          "name" : "토찌양갱",
+          "brandIdx": 1,
+          "categoryIdx":1,
+          "price":5000,
+          "salePrice":1000,
+          "deliveryType" : "일반 택배",
+          "isTodayDeal" : "x",
+          "imageurl" : "https://image.idus.com/image/files/f4b4b5dd1d9e4f119570b9bc010776da_512.jpg"
+        }
+        
+        
+          
+    ]
+  }
+  

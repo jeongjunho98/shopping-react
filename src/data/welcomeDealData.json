@@ -1,0 +1,33 @@
+{
+    "product_count": 100,
+    "results": [
+        {"idx": 1,
+          "name" : "신라면 작은컵 10개",
+          "brandIdx": 1,
+          "categoryIdx":1,
+          "price":10000,
+          "salePrice":5000,
+          "deliveryType" : "신라면 택배",
+          "isTodayDeal" : "x",
+          "imageurl" : "https://asset.m-gs.kr/prod/18677306/1/550"
+          },{
+            "idx": 2,
+            "name" : "[웰컴딜] 버터쿠키3mix(210g/퍼플상자)",
+            "categoryIdx": 1,
+            "price":9000,
+            "salePrice":900,
+            "deliveryType" : "일반 택배",
+            "isTodayDeal" : "x",
+            "imageurl" : "https://image.idus.com/image/files/fdf0c837f21247ac94b4ba86e9706e98_512.jpg"
+          },{
+            "idx": 3,
+            "name" : "[웰컴딜] 랄라 바니 롤티슈커버 (3color)",
+            "categoryIdx": 2,
+            "price":10000,
+            "salePrice" : 100,
+            "deliveryType" : "일반 택배",
+            "isTodayDeal" : "x",
+            "imageurl" : "https://image.idus.com/image/files/4825f89c59864ec99d9f3d8d5cffb849_512.jpg"
+          }
+    ]
+  }
