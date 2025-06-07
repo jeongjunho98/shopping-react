@@ -24,7 +24,7 @@ function Payment() {
       name: "결제 테스트", // 주문명 (필수항목)
       amount: "1000", // 금액 (필수항목)
       custom_data: { name: "부가정보", desc: "세부 부가정보" },
-      buyer_name: "지우학개론론", // 구매자 이름
+      buyer_name: "지우학개론", // 구매자 이름
       buyer_tel: "01048517984", // 구매자 전화번호 (필수항목)
       buyer_email: "jeongjunho9804@gmail.com", // 구매자 이메일
       buyer_addr: "주소",
