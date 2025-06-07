@@ -6,9 +6,9 @@ function Footer() {
     <FooterTag>
       <FullW>
         <NavLinks>
-          <MShow to="/test">이용 약관</MShow>
+          <MShow to="/test">이용약관</MShow>
           <span>|</span>
-          <MShow to="/test">개인정보 처리방침</MShow>
+          <MShow to="/test">개인정보처리방침</MShow>
           <span>|</span>
           <MShow to="/test">공지사항</MShow>
           <span>|</span>
@@ -16,27 +16,21 @@ function Footer() {
           <span>|</span>
           <MShow to="/test">이벤트</MShow>
           <span>|</span>
-          <MShow to="/test">입점문의</MShow>
-          <span>|</span>
-          <MShow to="/test">About A-little-Vanilla</MShow>
+          <MShow to="/test">About A-Nice24</MShow>
         </NavLinks>
       </FullW>
       <InnerWClf>
-        <LogoFooter>{/* <LogoGray /> */}</LogoFooter>
         <Fl>
           <FooterStrong>(주)나이스24시편의점</FooterStrong>
           <FooterUl>
             <FooterLi>대표이사 : 정준호</FooterLi>
-            {/* <FooterLi>전라남도 나주시 중야1길 37</FooterLi>
+            <FooterLi>전라남도 나주시 중야1길 37</FooterLi>
             <FooterLi>사업자 등록번호 : 100-00-00000</FooterLi>
-            <FooterLi>통신판매업신고 : 2025-전남나주-0001</FooterLi> */}
+            <FooterLi>통신판매업신고 : 2025-전남나주-0001</FooterLi>
           </FooterUl>
           <NtFix1>
-            나이스24시편의점은 통신판매중개자이며 통신판매의 당사자가 아닙니다.
-            <br />
-            따라서 나이스24시편의점은 상품 거래정보 및 거래에 대하여 책임을 지지
-            않습니다.
-            <Copyright>Copyright © 2025 Nice All right reserved.</Copyright>
+
+            <Copyright>Copyright © 2025 Nice24 All right reserved.</Copyright>
           </NtFix1>
         </Fl>
         <Fl>
@@ -58,14 +52,14 @@ function Footer() {
         <Fr>
           <FooterStrong>Follow Us</FooterStrong>
           <NavList>
-            {/* <LinkFacebook
+            <LinkFacebook
               className="icon-facebook-c"
               src="https://www.facebook.com/profile.php?id=61552753977877"
             />
             <LinkInstagram
               className="icon-instagram-c"
               src="https://www.instagram.com/jeongjunho945/"
-            /> */}
+            />
             <LinkNaverBlog
               className="icon-blog"
               href="https://blog.naver.com/jeongjunho9804"
@@ -87,7 +81,7 @@ const FooterTag = styled.footer`
 const FullW = styled.div`
   width: 100%;
   border-bottom: 1px solid #acacac;
-  border-top: 3px solid #f1c333;
+  border-top: 3px solid #0067a3;
 `;
 
 const NavLinks = styled.nav`

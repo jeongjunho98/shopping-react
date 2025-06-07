@@ -410,7 +410,7 @@ function CartList(props) {
 const EmptyCartBtn = styled.button`
   width: 246px;
   margin-top: 36px;
-  background: #f1c333;
+  background: #A6DAF4;
   border: 1px solid transparent;
   color: #ffffff;
   font-size: 16px;
@@ -436,7 +436,7 @@ const EmptyListText = styled.p`
 
 const LogoEmpty = styled.i`
   vertical-align: middle;
-  color: #f1c333;
+  color: #A6DAF4;
   font-size: 120px !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -461,7 +461,7 @@ const CartPageBottom = styled.div`
 
 const CartPageBottomR = styled.button`
   width: 100%;
-  background: #f1c333;
+  background: #A6DAF4;
   border: 1px solid transparent;
   color: #ffffff;
   font-size: 16px;
@@ -482,7 +482,7 @@ const CartPageBottomR = styled.button`
 const CartCheckoutDesktopH = styled.div`
   font-size: 24px;
   font-weight: bold;
-  color: #f1c333;
+  color: #A6DAF4;
 `;
 
 const CartCheckoutDesktopFix = styled.div`
@@ -528,9 +528,9 @@ const CartVipBan = styled.div`
   font-size: 12px;
   cursor: pointer;
   position: absolute;
-  background-color: #fff0b4;
+  background-color: #AEE8E4;
   color: #333333;
-  border: 1px solid #ffd200;
+  border: 1px solid #A6DAF4;
   opacity: 0.95;
   border-radius: 5px;
   padding: 8px 12px 8px 12px;
@@ -583,8 +583,8 @@ const CartPAllCheckI = styled.input`
   &:before {
     content: "v";
     font-size: 16px;
-    border: 1px solid #f1c333;
-    background: #f1c333;
+    border: 1px solid #A6DAF4;
+    background: #A6DAF4;
     color: #fff;
 
     cursor: pointer;

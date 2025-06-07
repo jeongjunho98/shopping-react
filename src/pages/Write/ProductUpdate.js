@@ -464,7 +464,7 @@ const Submit = styled.button`
   width: calc((97% - 46px) / 3);
   height: 46px;
   border-color: transparent;
-  background: #f1c333;
+  background: #A6DAF4;
   color: #fff;
   box-shadow: 0 1px 3px 0 hsl(0deg 0% 86% / 30%);
   font-weight: 400;
@@ -641,7 +641,7 @@ const ImgListIndicator = styled.ul`
     }
 
     &.active {
-      border: 2px solid #f1c333;
+      border: 2px solid #A6DAF4;
     }
   }
 `;

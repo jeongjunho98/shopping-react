@@ -398,8 +398,8 @@ const CheckBox = styled.input`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "v";
-    border: 1px solid #f1c333;
-    background: #f1c333;
+    border: 1px solid #A6DAF4;
+    background: #A6DAF4;
     color: #fff;
 
     cursor: pointer;
@@ -456,8 +456,8 @@ const RadioLabel = styled.label`
 const BtnMPoint = styled.button`
   width: 140px;
   color: #fff;
-  background: #f1c333;
-  border: 1px solid #f1c333;
+  background: #A6DAF4;
+  border: 1px solid #A6DAF4;
   height: 32px;
   padding: 15px 0;
   padding: 8px 15px;
@@ -510,7 +510,7 @@ const TimeLimit = styled.div`
   top: 2px;
   right: 20px;
   font-size: 14px;
-  color: #f1c333;
+  color: #A6DAF4;
 `;
 
 const InputTextSizeM = styled.div`
@@ -628,7 +628,7 @@ const MyInfo = styled.aside`
 const ProfileArea = styled.div`
   padding: 25px 0 28px;
   width: 100%;
-  border: 1px solid #f1c333;
+  border: 1px solid #A6DAF4;
 `;
 
 const Outline = styled.div`
@@ -699,7 +699,7 @@ const StrongName = styled.strong`
 
 const MyMenuEm = styled.em`
   display: block;
-  background: #f1c333;
+  background: #A6DAF4;
   padding: 9px 16px;
   color: #fff;
   font-size: 13px;

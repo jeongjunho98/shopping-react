@@ -18,7 +18,7 @@ const FullW = styled.div`
   width: 100%;
 `;
 const BannerTitle = styled.section`
-  background: rgb(247, 244, 226);
+  background: #00A2E8;
   position: relative;
   overflow: hidden;
   height: 420px;

@@ -61,7 +61,7 @@ function Likelist() {
                   <MyInfoSpan>관심 리스트</MyInfoSpan>
                 </MyInfoB>
                 <MyA href="/likelist">찜 목록</MyA>
-                <MyA>팔로우하는 상점</MyA>
+                <MyA>팔로우 상점 목록</MyA>
                 <MyA>최근 본 상품</MyA>
               </MyInfoNav>
             </div>

@@ -43,7 +43,7 @@ function OrderList(props) {
                   <ListOptions>
                     <Li>
                       {/* <OptionTxt>
-                        웰컴딜 수량 확인 : 1인당 1개 작품만 구매 가능해요
+                        웰컴딜 수량 확인 : 1인당 1개 작품만 구매 가능합니다.
                       </OptionTxt> */}
                       <OptionCount>1개</OptionCount>
                     </Li>
@@ -90,8 +90,8 @@ const BtnPoint = styled.button`
   padding: 6px 12px;
   font-size: 12px;
   color: #fff;
-  background: #f1c333;
-  border: 1px solid #f1c333;
+  background: #A6DAF4;
+  border: 1px solid #A6DAF4;
   width: 100%;
 `;
 

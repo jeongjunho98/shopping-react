@@ -74,8 +74,8 @@ function SignUpEmail() {
           if (response.data === true) {
             setCheckedEmail("이미 존재하는 이메일 입니다.");
           } else {
-            setCheckedEmail("가능");
-            console.log("가능");
+            setCheckedEmail("가능합니다");
+            console.log("가능합니다");
           }
         } catch (e) {
           console.log(e);
@@ -283,8 +283,8 @@ const BtnLogin = styled.button`
   display: inline-block;
   vertical-align: middle;
   color: #fff;
-  background: #f1c333;
-  border: 1px solid #f1c333;
+  background: #A6DAF4;
+  border: 1px solid #A6DAF4;
   width: 100%;
   height: 48px;
   line-height: 48px;
@@ -324,7 +324,7 @@ const Terms1Label = styled.label`
 
 const Terms1 = styled.input`
   // -webkit-appearance: none;
-  background: #f1c333;
+  background: #A6DAF4;
   display: inline-block;
   position: relative;
   height: 18px;
@@ -381,8 +381,8 @@ const TermsLabel = styled.label`
 //     font-size: 16px;
 //     font-style: normal;
 //     content: "✓";
-//     border: 1px solid #f1c333	;
-//     background: #f1c333	;
+//     border: 1px solid #A6DAF4	;
+//     background: #A6DAF4	;
 //     color: #fff;
 //     cursor: pointer;
 //     display: inline-block;
@@ -506,8 +506,8 @@ const SignupStep = styled.div`
 
     ${IsActive} {
       color: #fff;
-      border-color: #f1c333;
-      background: #f1c333;
+      border-color: #A6DAF4;
+      background: #A6DAF4;
     }
 
     ul {

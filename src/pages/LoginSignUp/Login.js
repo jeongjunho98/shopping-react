@@ -46,24 +46,16 @@ function Login() {
     <>
       <LoginWrap>
         <LoginContainer>
-          <LoginHeadLogo>
-            <h1>
-              <a>{/* <IconLogo /> */}</a>
-            </h1>
-          </LoginHeadLogo>
           <LoginHeadText>
             <NeedLogin>
               <BackgroundText>
-                <Text>로그인</Text>
-                <Background></Background>
               </BackgroundText>
-              이 필요한 서비스 입니다.
+              로그인이 필요한 서비스 입니다.
             </NeedLogin>
-            <CouponImg src="https://image.idus.com/static/signup/web_benefit_signup.png" />
           </LoginHeadText>
           <LoginSignupContent>
             <BorderAndText>
-              <span>간편 로그인/회원가입</span>
+              <span>회원가입</span>
             </BorderAndText>
 
             <VerticalButtons>
@@ -72,10 +64,10 @@ function Login() {
                 className="kakao"
               >
                 <SpIcon className="Kakaotalk"></SpIcon>
-                카카오로 3초만에 시작하기
+                카카오톡 연동하기
               </BarButton>
               <BarButton className="email" href="/signupemail">
-                이메일로 가입하기
+                이메일로 가입
               </BarButton>
             </VerticalButtons>
 
@@ -132,9 +124,9 @@ function Login() {
                   <InputCheckbox>
                     <Bp type="checkbox"></Bp>
                   </InputCheckbox>
-                  <label>이메일 저장하기</label>
+                  <label>아이디 저장하기</label>
                 </div>
-                <a>아이디 / 비밀번호 찾기</a>
+                <a>아이디/비밀번호 찾기</a>
               </EmailLoginOption>
             </EmailLoginContainer>
             <CommonButton
@@ -159,7 +151,7 @@ const CommonButton = styled.button`
   height: 44px;
   border-radius: 2px;
   border: none;
-  background: #f1c333;
+  background: #A6DAF4;
   color: #ffffff;
   font-size: 16px;
   line-height: 30px;
@@ -306,8 +298,8 @@ const BarButton = styled.a`
 
   &.email {
     background: #ffffff;
-    color: #f1c333;
-    border: 1px solid #f1c333;
+    color: #154889;
+    border: 1px solid #A6DAF4;
   }
 `;
 

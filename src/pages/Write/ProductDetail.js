@@ -6,8 +6,8 @@ function ProductDetail() {
   return (
     <InnerWMobileFull>
       <ProductDetailNoticeBox>
-        {/* <DeliveryGraphWrapper> */}
-        {/* <DeliveryGraphBox>
+        <DeliveryGraphWrapper>
+        <DeliveryGraphBox>
             <div>
               <GraphLineBox>
                 <GraphLineDay>당일</GraphLineDay>
@@ -53,26 +53,26 @@ function ProductDetail() {
             <DeliveryFooterTextBox>
               최근 3개월 주문의 배송준비 기간 (주말, 공휴일 제외)
             </DeliveryFooterTextBox>
-          </DeliveryGraphBox> */}
-        {/* </DeliveryGraphWrapper> */}
-        {/* <ProductDetailNoticeBoxDivider /> */}
+          </DeliveryGraphBox>
+        </DeliveryGraphWrapper>
+        <ProductDetailNoticeBoxDivider />
       </ProductDetailNoticeBox>
-      {/* <DataTriggerDetail /> */}
-      {/* <FixPosition /> */}
+      <DataTriggerDetail />
+      <FixPosition />
       <FlexNavStyle>
         <a href="#prd-info" className="active">
           작품정보
         </a>
         <a href="#prd-enquiries">배송 / 교환 / 환불</a>
-        {/* <a href="#prd-review">구매후기</a> */}
-        {/* <a href="#prd-comments">댓글</a> */}
+        <a href="#prd-review">구매후기</a>
+        <a href="#prd-comments">댓글</a>
       </FlexNavStyle>
       <PrdDetailSection>
         <ProductDetailDescription>
-          {/* <ProductDetailDescriptionContent> */}
-          {/* <ProductDetailDescriptionTextItem>
+          <ProductDetailDescriptionContent>
+          <ProductDetailDescriptionTextItem>
               <span>
-                [아이디어스 웰컴딜]
+                [웰컴딜]
                 <br />
                 <br />
               </span>
@@ -80,7 +80,7 @@ function ProductDetail() {
           </ProductDetailDescriptionContent>
           <ProductDetailDescriptionExpandWrapper>
             <ProductDetailDescriptionExpandWrapperGradient />
-          </ProductDetailDescriptionExpandWrapper> */}
+          </ProductDetailDescriptionExpandWrapper>
         </ProductDetailDescription>
         <TabStyle>
           <Split>
@@ -140,9 +140,9 @@ const TimeCounter = styled.div`
 const VipClubBtn = styled.button`
   height: 36px;
   border-radius: 4px;
-  border: 1px solid #f1c333;
+  border: 1px solid #A6DAF4;
   background-color: #ffffff;
-  color: #f1c333;
+  color: #A6DAF4;
   padding: 0 24px;
 `;
 
@@ -203,7 +203,7 @@ const GraphLineDay = styled.div`
   flex-shrink: 0;
 
   &.red {
-    color: #f1c333;
+    color: #A6DAF4;
     font-weight: bold;
   }
 `;
@@ -233,7 +233,7 @@ const GraphBarRate = styled.div`
   }
 
   &.red {
-    background-color: #f1c333;
+    background-color: #A6DAF4;
     width: ${(props) => props.rate}%;
   }
 `;
@@ -286,7 +286,7 @@ const FlexNavStyle = styled.nav`
   }
 
   a.active {
-    color: #f1c333;
+    color: #A6DAF4;
   }
 `;
 

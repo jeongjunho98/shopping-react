@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 import jwt_decode from "jwt-decode";
 import asasasa from "../Nav/asasasa.png";
 import QR from "../Nav/QR.png";
+import axios from 'axios'
 
 function Header() {
   const [isAppInstallHover, setIsAppInstallHover] = useState(false);
@@ -17,7 +18,7 @@ function Header() {
   const [cartnum, setCartnum] = useState("");
 
   const [word, setWord] = useState("");
-  const issueKeyword = "어버이날";
+  const issueKeyword = "어린이날";
 
   const [loginCheck, setLoginCheck] = useState("");
   const goMypage = () => {
@@ -41,27 +42,27 @@ function Header() {
     }
   };
 
-  // async function fetchData() {
-  //   const result = await axios.get("https://backend.alittlevanilla.kro.kr/cart/list", {
-  //     headers: {
-  //       Authorization: "Bearer " + localStorage.getItem("token"),
-  //       "Content-Type": "application/json",
-  //     },
-  //   });
-  //   console.log(JSON.stringify(result.data.result));
+   async function fetchData() {
+     const result = await axios.get("https://backend.alittlevanilla.kro.kr/cart/list", {
+       headers: {
+         Authorization: "Bearer " + localStorage.getItem("token"),
+         "Content-Type": "application/json",
+       },
+     });
+     console.log(JSON.stringify(result.data.result));
 
-  //   setCartnum(result.data.result);
-  // }
+     setCartnum(result.data.result);
+   }
 
   useEffect(() => {
     try {
       if (localStorage.getItem("token") !== null) {
         setLoginCheck(true);
-        // console.log("로그인: " + loginCheck);
-        // console.log("token: " + localStorage.getItem("token"));
+         console.log("로그인: " + loginCheck);
+         console.log("token: " + localStorage.getItem("token"));
       } else {
         setLoginCheck(false);
-        // fetchData();
+         fetchData();
       }
     } catch (error) {
       console.log("error: " + JSON.stringify(localStorage));
@@ -85,7 +86,7 @@ function Header() {
               onMouseOver={() => setIsAppInstallHover(true)}
               onMouseOut={() => setIsAppInstallHover(false)}
               readOnly
-              value="나이스24시편의점 앱 설치하기"
+              value="나이스24시편의점 어플 설치하기"
             />
             <MenuDropdownAppInstallGuide
               onMouseOver={() => setIsAppInstallHover(true)}
@@ -172,8 +173,8 @@ function Header() {
                   </MyDropdown>
                 </NavBtnUiDropdown>
 
-                {/* <GnbLoginBtn href="/signup">알림</GnbLoginBtn>
-                <GnbLoginBtn href="/signup">메시지</GnbLoginBtn> */}
+                <GnbLoginBtn href="/signup">알림</GnbLoginBtn>
+                <GnbLoginBtn href="/signup">메시지</GnbLoginBtn>
                 <NavBtnUiDropdown>
                   <BtnDropdown
                     onMouseOver={() => setIsCallCenterHover(true)}
@@ -187,16 +188,16 @@ function Header() {
                     isCallCenterHover={isCallCenterHover}
                   >
                     <CustomerLi>
-                      <CustomerA href="https://blog.naver.com/ghdalswl77">
+                      <CustomerA href="https://blog.naver.com/jeongjunho9804">
                         공지사항
                       </CustomerA>
                     </CustomerLi>
-                    {/* <CustomerLi>
+                    <CustomerLi>
                       <CustomerA>자주 묻는 질문</CustomerA>
                     </CustomerLi>
                     <CustomerLi>
                       <CustomerA>메일로 문의</CustomerA>
-                    </CustomerLi> */}
+                    </CustomerLi>
                   </MenuDropdown>
                 </NavBtnUiDropdown>
               </>
@@ -219,17 +220,12 @@ function Header() {
                     isCallCenterHover={isCallCenterHover}
                   >
                     <CustomerLi>
-                      <CustomerA href="https://github.com/minjipi/little_vanilla_front">
+                      <CustomerA href="https://github.com/jeongjunho98/shopping-react">
                         공지사항
                       </CustomerA>
                     </CustomerLi>
                     <CustomerLi>
-                      <CustomerA href="https://github.com/minjipi/little_vanilla_front/issues">
-                        자주 묻는 질문
-                      </CustomerA>
-                    </CustomerLi>
-                    <CustomerLi>
-                      <CustomerA href="https://blog.naver.com/ghdalswl77">
+                      <CustomerA href="https://blog.naver.com/jeongjunho9804">
                         블로그
                       </CustomerA>
                     </CustomerLi>
@@ -247,11 +243,6 @@ function Header() {
               <Iduslogo src={require("./logo.png")} />
             </IconIduslogo>
           </SearchHeaderDesktopLogo>
-          {/* 작품, 클래스 */}
-          <SearchHeaderDesktopServiceNav>
-            <ServiceActive>상품</ServiceActive>
-            <Service>클래스</Service>
-          </SearchHeaderDesktopServiceNav>
           {/* 검색바 */}
           <SearchInputDesktop>
             <SearchInputDesktopForm>
@@ -281,15 +272,6 @@ function Header() {
               </HeaderSearchLabel>
             </SearchInputDesktopForm>
           </SearchInputDesktop>
-          {/* 실시간 검색 */}
-          <KeywordTrendingDesktop>
-            <TrendingWordSlider>
-              <TrendingSlideWordA>
-                <TrendingSlideWordEm>1</TrendingSlideWordEm>
-                리틀 자수정 목걸이
-              </TrendingSlideWordA>
-            </TrendingWordSlider>
-          </KeywordTrendingDesktop>
           {/* 내 정보 */}
           <SearchHeaderProfileLinkNav>
             <ProfileA type="button" onClick={() => goMypage()}>
@@ -324,45 +306,35 @@ function Header() {
               >
                 <CategorySubmenuUl>
                   <CategorySubmenuLi>
-                    <CategorySubmenuA>디저트, 베이커리</CategorySubmenuA>
+                    <CategorySubmenuA>음료</CategorySubmenuA>
                   </CategorySubmenuLi>
 
                   <CategorySubmenuLi>
-                    <CategorySubmenuA>음료(커피, 차)</CategorySubmenuA>
+                    <CategorySubmenuA>빵류</CategorySubmenuA>
                   </CategorySubmenuLi>
 
                   <CategorySubmenuLi>
-                    <CategorySubmenuA>전통주</CategorySubmenuA>
+                    <CategorySubmenuA>김밥</CategorySubmenuA>
                   </CategorySubmenuLi>
 
                   <CategorySubmenuLi>
-                    <CategorySubmenuA>수제반찬</CategorySubmenuA>
+                    <CategorySubmenuA>도시락</CategorySubmenuA>
                   </CategorySubmenuLi>
 
-                  <CategorySubmenuLi>
-                    <CategorySubmenuA>그외 수제먹거리</CategorySubmenuA>
-                  </CategorySubmenuLi>
-
-                  <CategorySubmenuLi>
-                    <CategorySubmenuA>농축수산물</CategorySubmenuA>
-                  </CategorySubmenuLi>
-                  <CategorySubmenuLi>
-                    <CategorySubmenuA>의류</CategorySubmenuA>
-                  </CategorySubmenuLi>
                 </CategorySubmenuUl>
                 <CategorySubmenuUl>
-                  <CategorySubmenuLi>시계</CategorySubmenuLi>
-                  <CategorySubmenuLi>섬유, 퀼트</CategorySubmenuLi>
+                  <CategorySubmenuLi>과자</CategorySubmenuLi>
+                  <CategorySubmenuLi>불량식품</CategorySubmenuLi>
                 </CategorySubmenuUl>
 
                 <CategorySubmenuUl>
-                  <CategorySubmenuLi>꽃</CategorySubmenuLi>
-                  <CategorySubmenuLi>캔들, 디퓨저, 방향제</CategorySubmenuLi>
+                  <CategorySubmenuLi>문구류</CategorySubmenuLi>
+                  <CategorySubmenuLi>교통카드</CategorySubmenuLi>
                 </CategorySubmenuUl>
 
                 <CategorySubmenuUl>
-                  <CategorySubmenuLi>휴대폰 케이스</CategorySubmenuLi>
-                  <CategorySubmenuLi>전자기기 관련</CategorySubmenuLi>
+                  <CategorySubmenuLi>상품권</CategorySubmenuLi>
+                  <CategorySubmenuLi>기타상품</CategorySubmenuLi>
                 </CategorySubmenuUl>
               </CategorySubmenu>
               <UiGnbSubmenuDiv></UiGnbSubmenuDiv>
@@ -372,25 +344,17 @@ function Header() {
               <MenuA to="/">홈</MenuA>
             </UiGnbMenuLi>
 
-            {/* <UiGnbMenuLi>
-              <MenuA >오늘의 작품</MenuA>
-            </UiGnbMenuLi> */}
+            <UiGnbMenuLi>
+              <MenuA >오늘의 핫딜 상품</MenuA>
+            </UiGnbMenuLi>
 
-            {/* <UiGnbMenuLi>
-              <MenuA>실시간 구매</MenuA>
+            <UiGnbMenuLi>
+              <MenuA>실시간 구매로그</MenuA>
             </UiGnbMenuLi>
 
             <UiGnbMenuLi>
               <MenuA>실시간 후기</MenuA>
             </UiGnbMenuLi>
-
-            <UiGnbMenuLi>
-              <MenuA>작가님 추천</MenuA>
-            </UiGnbMenuLi>
-
-            <UiGnbMenuLi>
-              <MenuA>실시간 추천</MenuA>
-            </UiGnbMenuLi> */}
           </UiGnbUl>
         </InnerContainerGnb>
       </FullGnbScrollDiv>
@@ -575,8 +539,8 @@ const BtnPoint = styled.button`
   padding: 6px 12px;
   font-size: 12px;
   color: #fff;
-  background: #f1c333;
-  border: 1px solid #f1c333;
+  background: #A6DAF4;
+  border: 1px solid #A6DAF4;
 `;
 
 const MenuDropdownAppSpan = styled.span`
@@ -737,7 +701,7 @@ const CustomerA = styled.a`
   height: 100%;
 
   &:hover {
-    color: #f1c333;
+    color: #A6DAF4;
   }
 `;
 
@@ -774,7 +738,7 @@ const SearchHeaderDesktopServiceNav = styled.nav`
 `;
 
 const ServiceActive = styled.a`
-  color: #f1c333;
+  color: #A6DAF4;
   font-weight: bold;
   font-size: 18px;
   margin-right: 30px;
@@ -793,7 +757,7 @@ const SearchInputDesktop = styled.div`
   margin-right: 24px;
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid #f1c333;
+  border: 1px solid #A6DAF4;
   border-radius: 4px;
   height: 40px;
 `;
@@ -877,7 +841,7 @@ const SearchInputDesktopSearchButton = styled.button`
   vertical-align: middle;
 `;
 const IdusIconSearch = styled.i`
-  color: #f1c333;
+  color: #A6DAF4;
   font-size: 24px;
   line-height: 38px;
 `;
@@ -961,7 +925,7 @@ const ProfileBadge = styled.span`
   height: 17px;
   border-radius: 50%;
   color: #ffffff;
-  background: #f1c333;
+  background: #A6DAF4;
   text-align: center;
   line-height: 18px;
   right: -3px;
@@ -1034,7 +998,7 @@ const MenuSpan = styled.span`
   color: #666;
 
   &:hover {
-    color: #f1c333;
+    color: #A6DAF4;
   }
 `;
 
@@ -1118,7 +1082,7 @@ const MenuA = styled(Link)`
   color: #666;
 
   &:hover {
-    color: #f1c333;
+    color: #A6DAF4;
   }
 `;
 

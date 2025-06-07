@@ -14,24 +14,20 @@ function SignUp() {
               <a>{/* <IconLogo /> */}</a>
             </h1>
           </LoginHeadLogo>
-          <LoginHeadText>
-            <NeedLogin></NeedLogin>
-            <CouponImg src="https://image.idus.com/static/signup/web_benefit_signup.png" />
-          </LoginHeadText>
           <LoginSection>
-            <LoginTitle>정말 간단한 회원가입하기</LoginTitle>
+            <LoginTitle>회원가입하기</LoginTitle>
             <SignupStep className="wrap">
               <ul>
                 <IsActive>1</IsActive>
                 <li>2</li>
               </ul>
-              <Title>회원가입 방법 선택하기</Title>
+              <Title>회원가입 방법 선택</Title>
             </SignupStep>
             <LoginSns className="wrap">
               <Item>
                 <Kakaotalk href="https://backend.alittlevanilla.kro.kr/oauth2/authorization/kakao">
                   <SpIcon className="Kakaotalk" />
-                  "카카오톡으로 가입하기"
+                  카카오톡으로 가입하기
                 </Kakaotalk>
               </Item>
               {emailVisible ? (
@@ -128,9 +124,9 @@ const LoginSns = styled.div`
       }
 
       ${Email} {
-        border: 2px solid #f1c333;
+        border: 2px solid #A6DAF4;
         background: #fff;
-        color: #f1c333;
+        color: #A6DAF4;
         line-height: 28px;
       }
       ${Twitter} {
@@ -183,8 +179,8 @@ const SignupStep = styled.div`
 
     ${IsActive} {
       color: #fff;
-      border-color: #f1c333;
-      background: #f1c333;
+      border-color: #154889;
+      background: #154889;
     }
 
     ul {

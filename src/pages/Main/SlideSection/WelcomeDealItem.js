@@ -255,7 +255,7 @@ const ProductInfoBadgeGroup = styled.div`
 
 const BadgeFood = styled.div`
   margin-right: 0;
-  background-color: #f1c333;
+  background-color: #A6DAF4;
   color: #39af4d;
   padding: 5px 6px 4px;
   height: 20px;
@@ -284,7 +284,7 @@ const UiRatingFr = styled.span`
 
 const Star = styled.i`
   font-size: 11px;
-  color: #ffc500 !important;
+  color: #A6DAF4 !important;
   display: inline-block;
   vertical-align: middle;
   font-style: normal;

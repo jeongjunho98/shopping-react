@@ -42,7 +42,7 @@ const CommonButton = styled.button`
   height: 44px;
   border-radius: 2px;
   border: none;
-  background: #f1c333;
+  background: #A6DAF4;
   color: #ffffff;
   font-size: 16px;
   line-height: 30px;
@@ -76,8 +76,8 @@ const SignupStep = styled.div`
 
     ${IsActive} {
       color: #fff;
-      border-color: #f1c333;
-      background: #f1c333;
+      border-color: #A6DAF4;
+      background: #A6DAF4;
     }
 
     ul {

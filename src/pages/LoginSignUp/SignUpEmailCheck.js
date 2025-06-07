@@ -37,8 +37,8 @@ const SignupStep = styled.div`
 
     ${IsActive} {
       color: #fff;
-      border-color: #f1c333;
-      background: #f1c333;
+      border-color: #A6DAF4;
+      background: #A6DAF4;
     }
 
     ul {

@@ -94,15 +94,6 @@ function Product() {
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  //   let timer = setTimeout(() => {
-  //     setAlert(false);
-  //   }, 2000);
-  //   return () => {
-  //     clearTimeout(timer);
-  //   };
-  // });
-
   const inputPriceFormat = (str) => {
     const comma = (str) => {
       str = String(str);
@@ -821,9 +812,9 @@ const TimeCounter = styled.div`
 const VipClubBtn = styled.button`
   height: 36px;
   border-radius: 4px;
-  border: 1px solid #f1c333;
+  border: 1px solid #A6DAF4;
   background-color: #ffffff;
-  color: #f1c333;
+  color: #A6DAF4;
   padding: 0 24px;
 `;
 
@@ -843,8 +834,8 @@ const Atag = styled.a`
   font-size: 12px;
 
   color: #fff;
-  background: #f1c333;
-  border: 1px solid #f1c333;
+  background: #A6DAF4;
+  border: 1px solid #A6DAF4;
 
   width: 80px;
   font-size: 10px;
@@ -933,7 +924,7 @@ const RedBuy = styled.button`
   padding: 0 16px;
   line-height: 30px;
   border-color: transparent;
-  background: #f1c333;
+  background: #A6DAF4;
   color: #fff;
   display: block;
   float: left;
@@ -974,7 +965,7 @@ const Update = styled.button`
   padding: 0 16px;
   line-height: 30px;
   border-color: #d9d9d9;
-  background: #ffecbb;
+  background: #CFFFE5;
   color: darkslategray;
   display: block;
   float: left;
@@ -1201,7 +1192,7 @@ const ImgListIndicator = styled.ul`
     }
 
     &.active {
-      border: 2px solid #f1c333;
+      border: 2px solid #A6DAF4;
     }
   }
 `;
@@ -1582,8 +1573,8 @@ const VipSectionTdR = styled.td`
 `;
 
 const VipSectionA = styled.a`
-  color: #f1c333;
-  color: #f1c333 !important;
+  color: #A6DAF4;
+  color: #A6DAF4 !important;
 `;
 
 const VipSectionDesc = styled.p`
@@ -1618,7 +1609,7 @@ const ReviewRateSpan = styled.span`
 
 const Star = styled.i`
   font-size: 15px;
-  color: #ffc500 !important;
+  color: #A6DAF4 !important;
   display: inline-block;
   vertical-align: middle;
   font-style: normal;

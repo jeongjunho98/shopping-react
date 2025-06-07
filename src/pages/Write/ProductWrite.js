@@ -49,13 +49,13 @@ function ProductWrite() {
       formData.append("uploadFiles", image);
     });
 
-  // useEffect(() => {
-  //     if (jwt_decode(localStorage.getItem("token")) == null) {
-  //       alert("판매자만 접근할 수 있는 페이지 입니다.");
-  //       window.location.href = "/";
-  //     }
+  useEffect(() => {
+       if (jwt_decode(localStorage.getItem("token")) == null) {
+         alert("판매자만 접근할 수 있는 페이지 입니다.");
+         window.location.href = "/";
+       }
 
-  // }, []);
+   }, []);
 
   const onSubmit = async () => {
     try {
@@ -256,7 +256,7 @@ function ProductWrite() {
 
                     <div>
                       <PriceTagD>
-                        {/* <StickyAsideMRight>
+                        <StickyAsideMRight>
                           <LikeBtn>
                             <ProductDetailStarTxt1>
                               <ProductDetailStarTxt2>
@@ -272,7 +272,7 @@ function ProductWrite() {
                               <ShareIcon className="fas fa-share-alt" />
                             </ProductDetailShare>
                           </ProductDetailShareBtn>
-                        </StickyAsideMRight> */}
+                        </StickyAsideMRight>
 
                         <ProductDetailSpan>
                           <PriceTagStrong>
@@ -302,15 +302,15 @@ function ProductWrite() {
                         </ProductDetailSpan>
                         <Maker></Maker>
                       </PriceTagD>
-                      {/* <PricetagD2>
+                      <PricetagD2>
                         <MarkR>
                           <CountUp>750 명</CountUp>
                           <DarkSpan>구매</DarkSpan>
                         </MarkR>
-                      </PricetagD2> */}
+                      </PricetagD2>
                       <div>
                         <DataRow>
-                          {/* <DataRowTable>
+                          <DataRowTable>
                             <tbody>
                               <DataRowTr>
                                 <TitleTd>적립금</TitleTd>
@@ -324,7 +324,7 @@ function ProductWrite() {
                                 </ContenetTd>
                               </DataRowTr>
                             </tbody>
-                          </DataRowTable> */}
+                          </DataRowTable>
 
                           <BalloonContent>
                             <BalloonBtn>
@@ -351,7 +351,7 @@ function ProductWrite() {
                                 </tbody>
                               </PointBalTable>
 
-                              {/* <div>
+                              <div>
                                 <VipSection>
                                   <VipSectionDiv />
                                   <tbody>
@@ -370,12 +370,12 @@ function ProductWrite() {
                                   유료 서비스로 작품 금액의 1.0% 추가 적립 및
                                   배송비 무료 혜택을 제공합니다.
                                 </VipSectionDesc>
-                              </div> */}
+                              </div>
                             </PointBal>
                           </BalloonContent>
                         </DataRow>
 
-                        {/* <DataRow>
+                        <DataRow>
                           <DataRowTable>
                             <tbody>
                               <DataRowTr>
@@ -401,9 +401,9 @@ function ProductWrite() {
                               </DataRowTr>
                             </tbody>
                           </DataRowTable>
-                        </DataRow> */}
+                        </DataRow>
 
-                        {/* <DataRow>
+                        <DataRow>
                           <DataRowTable>
                             <tbody>
                               <DataRowTr>
@@ -422,7 +422,7 @@ function ProductWrite() {
                               </DataRowTr>
                             </tbody>
                           </DataRowTable>
-                        </DataRow> */}
+                        </DataRow>
 
                         <DataRow>
                           <DataRowTable>
@@ -445,7 +445,7 @@ function ProductWrite() {
                           </DataRowTable>
                         </DataRow>
 
-                        {/* <DataRow>
+                        <DataRow>
                           <DataRowTable>
                             <tbody>
                               <DataRowTr>
@@ -499,18 +499,17 @@ function ProductWrite() {
                         </DataRow>
                       </div>
                     </div>
-                    {/*  */}
                     <div>
                       <BuyScrollable>
                         <div>
-                          {/* <SelectGroupTriggerBtn type="button">
+                          <SelectGroupTriggerBtn type="button">
                             옵션 선택
                             <IdusIconArrowDown className="fas fa-chevron-down"></IdusIconArrowDown>
                           </SelectGroupTriggerBtn>
                           <QuotaMessageDiv>
                             <IdusIconIf />
                             웰컴딜 주문 가능 수량 : 1개
-                          </QuotaMessageDiv> */}
+                          </QuotaMessageDiv>
 
                           <Submit type="button" onClick={onSubmit}>
                             제출
@@ -582,7 +581,7 @@ const Submit = styled.button`
   width: calc((97% - 46px) / 3);
   height: 46px;
   border-color: transparent;
-  background: #f1c333;
+  background: #A6DAF4;
   color: #fff;
   box-shadow: 0 1px 3px 0 hsl(0deg 0% 86% / 30%);
   font-weight: 400;
@@ -759,7 +758,7 @@ const ImgListIndicator = styled.ul`
     }
 
     &.active {
-      border: 2px solid #f1c333;
+      border: 2px solid #A6DAF4;
     }
   }
 `;
@@ -1145,8 +1144,8 @@ const VipSectionTdR = styled.td`
 `;
 
 const VipSectionA = styled.a`
-  color: #f1c333;
-  color: #f1c333 !important;
+  color: #A6DAF4;
+  color: #A6DAF4 !important;
 `;
 
 const VipSectionDesc = styled.p`
@@ -1181,7 +1180,7 @@ const ReviewRateSpan = styled.span`
 
 const Star = styled.i`
   font-size: 15px;
-  color: #ffc500 !important;
+  color: #A6DAF4 !important;
   display: inline-block;
   vertical-align: middle;
   font-style: normal;

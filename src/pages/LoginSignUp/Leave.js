@@ -40,7 +40,7 @@ function Leave() {
 const EmptyCartBtn = styled.button`
   width: 246px;
   margin-top: 36px;
-  background: #f1c333;
+  background: #A6DAF4;
   border: 1px solid transparent;
   color: #ffffff;
   font-size: 16px;
@@ -66,7 +66,7 @@ const EmptyListText = styled.p`
 
 const LogoEmpty = styled.i`
   vertical-align: middle;
-  color: #f1c333;
+  color: #A6DAF4;
   font-size: 120px !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;

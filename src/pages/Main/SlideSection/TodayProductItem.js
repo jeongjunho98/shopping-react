@@ -207,7 +207,7 @@ const UiRating = styled.div`
 `;
 
 const IconStarFill = styled.i`
-  color: #ffc801;
+  color: #A6DAF4;
 `;
 
 const UiCardComment = styled.span`

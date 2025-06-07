@@ -95,14 +95,7 @@ function Search() {
               <TxtDesktop>
                 <Em>"{params.word}"</Em>에 대한 작품 검색 결과
               </TxtDesktop>
-              <TextMobile>작품 검색결과</TextMobile>
-            </UiTabGroupTab>
-
-            <UiTabGroupTab>
-              <TxtDesktop>
-                <Em>"{params.word}"</Em>에 대한 클래스 검색 결과
-              </TxtDesktop>
-              <TextMobile>클래스 검색결과</TextMobile>
+              <TextMobile>상품 검색결과</TextMobile>
             </UiTabGroupTab>
           </UiTabGroup>
 
@@ -356,7 +349,7 @@ function Search() {
                           ></CheckBoxInput>
                         </CheckBox>
                       </CheckBox>
-                      <OnlyImgMarginL>이미지만 볼래요</OnlyImgMarginL>
+                      <OnlyImgMarginL>이미지만 보겠습니다</OnlyImgMarginL>
                     </OnlyImgBox>
                   </OnlyImgBtn>
                   <DesktopProductFilterSort>
@@ -592,8 +585,7 @@ const BaseSelectorOptionItemList = styled.ul`
   max-height: 400px;
   overflow-y: auto;
   background: #ffffff;
-  border: 1px solid #f1c333;
-  border-top: 0 none;
+  border: 1px solid #A6DAF4
   border-bottom: 0 none;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -601,7 +593,7 @@ const BaseSelectorOptionItemList = styled.ul`
 
   &.active {
     height: auto;
-    border-bottom: 1px solid #f1c333;
+    border-bottom: 1px solid #A6DAF4;
   }
 `;
 
@@ -671,7 +663,7 @@ const BaseRadioBtn = styled.input`
   &:before {
     width: 15px;
     height: 18px;
-    color: #f1c333;
+    color: #A6DAF4;
   }
 `;
 const BaseRadio = styled.label``;
