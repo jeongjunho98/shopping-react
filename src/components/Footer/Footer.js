@@ -25,7 +25,7 @@ function Footer() {
           <FooterUl>
             <FooterLi>대표이사 : 정준호</FooterLi>
             <FooterLi>전라남도 나주시 중야1길 37</FooterLi>
-            <FooterLi>사업자 등록번호 : 100-00-00000</FooterLi>
+            <FooterLi>사업자 등록번호 : 000-00-00000</FooterLi>
             <FooterLi>통신판매업신고 : 2025-전남나주-0001</FooterLi>
           </FooterUl>
           <NtFix1>
@@ -49,23 +49,6 @@ function Footer() {
             최선을 다해 도와드리겠습니다.
           </NtFix1>
         </Fl>
-        <Fr>
-          <FooterStrong>Follow Us</FooterStrong>
-          <NavList>
-            <LinkFacebook
-              className="icon-facebook-c"
-              src="https://www.facebook.com/profile.php?id=61552753977877"
-            />
-            <LinkInstagram
-              className="icon-instagram-c"
-              src="https://www.instagram.com/jeongjunho945/"
-            />
-            <LinkNaverBlog
-              className="icon-blog"
-              href="https://blog.naver.com/jeongjunho9804"
-            />
-          </NavList>
-        </Fr>
       </InnerWClf>
     </FooterTag>
   );
