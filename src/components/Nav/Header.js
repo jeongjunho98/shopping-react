@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import jwt_decode from "jwt-decode";
 import asasasa from "../Nav/asasasa.png";
-import QR from "../../Images/QR.png";
+import QR from "../Nav/QR.png";
 
 function Header() {
   const [isAppInstallHover, setIsAppInstallHover] = useState(false);
@@ -85,7 +85,7 @@ function Header() {
               onMouseOver={() => setIsAppInstallHover(true)}
               onMouseOut={() => setIsAppInstallHover(false)}
               readOnly
-              value="어리틀바닐라 앱 설치하기"
+              value="나이스24시편의점 앱 설치하기"
             />
             <MenuDropdownAppInstallGuide
               onMouseOver={() => setIsAppInstallHover(true)}
@@ -94,7 +94,7 @@ function Header() {
             >
               <MenuDropdownAppH1>
                 <SpIconImgAppicon />
-                어리틀바닐라를 스마트폰으로 더욱 편리하게 사용하세요.
+                나이스24시편의점을 스마트폰으로 더욱 편리하게 사용하세요.
               </MenuDropdownAppH1>
               <MenuDropdownAppOl>
                 <MenuDropdownAppLi>
@@ -164,7 +164,7 @@ function Header() {
                     <AddBorder
                       onClick={() => {
                         logout();
-                        console.log("로그아웃! body: " + email);
+                        console.log("로그아웃 되었습니다 body: " + email);
                       }}
                     >
                       로그아웃

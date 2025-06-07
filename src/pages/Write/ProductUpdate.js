@@ -6,7 +6,7 @@ import ProductDetail from "./ProductDetail";
 import $ from "jquery";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
-import sale from "../../Images/sale.png";
+import sale from "../../images/sale.png";
 import { useParams } from "react-router";
 
 function ProductUpdate() {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import mainad from "../../../Images/mainad.png";
+import mainad from "../../../images/mainad.png";
 
 function MainTop() {
   return (
@@ -8,16 +8,6 @@ function MainTop() {
       <FullW>
         <BannerTitle>
           <BannerImg src={mainad} alt="banner" />
-          <Col>
-            <ShowroomArticle>
-              <Title>
-                안녕하세요! <br />저희 쇼핑몰에 오신것을 진심으로 환영합니다!
-                <br />
-                저희 쇼핑몰에 궁금한점이 있다면 언제든지 연락주시기 바랍니다.
-              </Title>
-              <Desc></Desc>
-            </ShowroomArticle>
-          </Col>
         </BannerTitle>
       </FullW>
     </>

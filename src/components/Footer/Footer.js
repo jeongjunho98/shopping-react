@@ -24,7 +24,7 @@ function Footer() {
       <InnerWClf>
         <LogoFooter>{/* <LogoGray /> */}</LogoFooter>
         <Fl>
-          <FooterStrong>(주) 나이스24시편의점</FooterStrong>
+          <FooterStrong>(주)나이스24시편의점</FooterStrong>
           <FooterUl>
             <FooterLi>대표이사 : 정준호</FooterLi>
             {/* <FooterLi>전라남도 나주시 중야1길 37</FooterLi>
